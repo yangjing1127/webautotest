@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 测试套件配置文件的约束是有dtd文件控制的-->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="后台管理系统">
+    <!--定义一个测试集合-->
+    <test name="register">
+        <classes>
+            <class name="com.yj.cases.RegisterCaseV2" ></class>
+        </classes>
+    </test>
+    <parameter name="browserType" value="firefox"></parameter>
+    <parameter name="driverPath" value="src/test/resources/geckodriver.exe"></parameter>
+</suite>
